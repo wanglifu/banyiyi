@@ -37,6 +37,6 @@ class Tools
     }
 
     public static function Hello(){
-        echo 'Hello word';
+        echo 'Hello word 111';
     }
 }
