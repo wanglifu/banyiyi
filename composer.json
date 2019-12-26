@@ -1,0 +1,21 @@
+{
+    "name": "wlf/banyiyi",
+    "description": "banyiyi test",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wanglifu",
+            "email": "358630827@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Abstarfish\\Starfish\\": "src/Abstarfish/Starfish"
+        }
+    }
+}
