@@ -23,15 +23,34 @@
  *       ┗┻┛　┗┻┛
  * Created by PhpStorm.
  * User: wanglifu
- * Date: 2019/12/27
- * Time: 13:36
+ * Date: 2020/1/5
+ * Time: 15:54
  * Notes:
  */
+namespace Banyiyi\Client;
 
-class Token
+
+class AccessTokenClient
 {
-    public function getToken()
+
+    protected static $instance = null;
+
+    protected function __construct($options = [])
     {
-        return $this->httpGet('cgi-bin/user/info');
+        $this->config = $options;
+    }
+
+
+    public static function instance($options = [])
+    {
+        if (is_null(self::$instance)) {
+            self::$instance = new static($options);
+        }
+
+        return self::$instance;
+    }
+
+    public static function getToken(){
+        return $token;
     }
 }
