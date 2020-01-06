@@ -28,5 +28,10 @@
  * Notes:
  */
 require_once './vendor/autoload.php';
-
-\Abstarfish\Starfish\Tools::Hello();
+require_once 'banyiyi/src/Token/AccessTokenClient.php';
+$config = [
+    'app_id'=> '5e11840ad3cc29',
+    'app_secret'=> 'ssssssssssssssssssssssssssssssss',
+];
+$token = \Banyiyi\Client\AccessTokenClient::instance($config);
+var_dump($token->getToken());
