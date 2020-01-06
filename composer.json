@@ -1,34 +1,21 @@
 {
-    "name": "yin32167/cpstpl",
-    "description":  "My template of composer project!",
-    "keywords": ["yin32167"],
+    "name": "wlf/banyiyi",
+    "description": "banyiyi test",
+    "type": "project",
     "license": "MIT",
     "authors": [
         {
-            "name": "Magina Yin",
-            "email": "yin32167@aliyun.com",
-            "homepage": "https://github.com/yin32167",
-            "role": "Developer"
+            "name": "wanglifu",
+            "email": "358630827@qq.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
-        "monolog/monolog": "1.0.*",
-        "php": ">=7.0.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "@stable"
+        "php": ">=7.0",
+        "guzzlehttp/guzzle": "~6.0",
+        "symfony/cache": "^3.3 || ^4.3"
     },
     "autoload": {
-        "classmap": [
-           
-        ],
-        "psr-4": {
-            "Yin32167\\CpsTpl\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Yin32167\\CpsTpl\\Tests\\": "tests/"
-        }
+        "Banyiyi\\":"src/"
     }
 }
