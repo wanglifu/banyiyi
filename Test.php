@@ -29,11 +29,11 @@
  */
 require_once './vendor/autoload.php';
 $config = [
-    'app_id'=> '5e11840ad3cc29',
-    'app_secret'=> 'ssssssssssssssssssssssssssssssss',
+    'app_id'=> 'bed1335956aa0f0e',
+    'app_secret'=> 'fa4c4d7e0162a692a81db20a15da81ca',
 ];
-/*$token = \Banyiyi\Client\AccessTokenClient::instance($config);
-var_dump($token->getToken());*/
+$token = \Banyiyi\Client\AccessTokenClient::instance($config);
+var_dump($token->refreshToekn());
 
 
 /*$BlockchainClient = \Banyiyi\Client\BlockchainClient::instance($config);

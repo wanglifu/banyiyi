@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="735837ae-b3ac-42f8-8ec6-9b18b30393f0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.php" beforeDir="false" afterPath="$PROJECT_DIR$/demo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaseClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.php" beforeDir="false" afterPath="$PROJECT_DIR$/Test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Client/AccessTokenClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/AccessTokenClient.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client/BlockchainClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/BlockchainClient.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client/CacheClient.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client/CopyrightClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/CopyrightClient.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client/SortClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/SortClient.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +41,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../banyiyi_open_platform" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -101,7 +97,7 @@
       <workItem from="1578210718597" duration="2466000" />
       <workItem from="1578213241794" duration="2942000" />
       <workItem from="1578273975907" duration="603000" />
-      <workItem from="1578279141479" duration="19256000" />
+      <workItem from="1578279141479" duration="20276000" />
     </task>
     <servers />
   </component>

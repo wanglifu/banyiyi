@@ -80,11 +80,20 @@ class AccessTokenClient extends CacheClient
             return $cache->get($cacheKey);
         }
 
-        return $this->httpPost($this->prefix.'/api/common/getAppToken', $this->config);
+        $token = $this->httpPost($this->prefix . '/api/common/getAppToken', $this->config);
 
+        $this->setToken($token['data']['access_token'], 7200);
+        return $token;
     }
 
 
+    /**
+     * @param string $token
+     * @param int $lifetime
+     * @return $this
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * 设置token
+     */
     public function setToken(string $token, int $lifetime = 7200)
     {
         $this->getCache()->set($this->getCacheKey(), [
@@ -100,6 +109,7 @@ class AccessTokenClient extends CacheClient
     }
 
     /**
+     * @return $this
      * 重新获取
      */
     public function refreshToekn()
