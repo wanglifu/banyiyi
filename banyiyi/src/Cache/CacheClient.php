@@ -28,7 +28,7 @@
  * Notes:
  */
 
-namespace Banyiyi\Cache;
+namespace Banyiyi\Client;
 
 use http\Exception\InvalidArgumentException;
 use Psr\Cache\CacheItemPoolInterface;
