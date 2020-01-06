@@ -67,7 +67,7 @@ class BlockchainClient extends BaseClient
         $params = [
             'userKey' => $userKey,
         ];
-        return $this->httpGet('http://open.banyiyi.com/api/blockchain/bindUserBlockChain', $params);
+        return $this->httpGet('/api/blockchain/bindUserBlockChain', $params);
     }
 
     /**
@@ -80,6 +80,6 @@ class BlockchainClient extends BaseClient
         $params = [
             'userKey' => $userKey,
         ];
-        return $this->httpPost('http://open.banyiyi.com/api/blockchain/bindUserBlockChain', $params);
+        return $this->httpPost('/api/blockchain/bindUserBlockChain', $params);
     }
 }

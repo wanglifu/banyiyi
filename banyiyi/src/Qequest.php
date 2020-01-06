@@ -33,7 +33,7 @@ namespace Banyiyi\Base;
 
 class Qequest
 {
-
+    private $prefix = 'http://open.banyiyi.com';
     /**
      * @param string $url
      * @param array $query
@@ -42,7 +42,7 @@ class Qequest
      */
     protected function httpGet(string $url, array $query = [])
     {
-        return $this->request($url, 'GET', ['query' => $query]);
+        return $this->request($this->prefix.$url, 'GET', ['query' => $query]);
     }
 
     /**
@@ -54,7 +54,7 @@ class Qequest
      */
     protected function httpPost(string $url, array $data = [], $verify = false)
     {
-        return $this->request($url, 'POST', ['form_params' => $data, 'verify' => $verify]);
+        return $this->request($this->prefix.$url, 'POST', ['form_params' => $data, 'verify' => $verify]);
     }
 
 }

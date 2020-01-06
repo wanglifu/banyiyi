@@ -32,7 +32,6 @@ namespace Banyiyi\Client;
 
 include_once 'banyiyi/src/Cache/CacheClient.php';
 
-use Banyiyi\Cache\CacheClient;
 use GuzzleHttp\Client;
 use GuzzleHttp\Promise\AggregateException;
 use http\Exception\RuntimeException;
