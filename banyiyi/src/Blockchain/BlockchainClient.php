@@ -30,6 +30,7 @@
 
 namespace Banyiyi\Client;
 
+require_once 'banyiyi/src/BaseClient.php';
 
 use Banyiyi\Base\BaseClient;
 use Closure;
@@ -41,7 +42,7 @@ class BlockchainClient extends BaseClient
 
     protected $config = [];
 
-    protected function __construct($options = [])
+    private function __construct($options = [])
     {
         $this->config = $options;
     }
@@ -56,13 +57,29 @@ class BlockchainClient extends BaseClient
         return self::$instance;
     }
 
-    public function getKey(string $openid, string $lang = 'zh_CN')
+    /**
+     * @param $userKey
+     * @return string
+     * 绑定用户
+     */
+    public function getKey($userKey)
     {
         $params = [
-            'openid' => $openid,
-            'lang' => $lang,
+            'userKey' => $userKey,
         ];
+        return $this->httpGet('http://open.banyiyi.com/api/blockchain/bindUserBlockChain', $params);
+    }
 
-        return $this->httpGet('cgi-bin/user/info', $params);
+    /**
+     * @param $userKey
+     * @return string
+     * 文件上链
+     */
+    public function cochain($userKey)
+    {
+        $params = [
+            'userKey' => $userKey,
+        ];
+        return $this->httpPost('http://open.banyiyi.com/api/blockchain/bindUserBlockChain', $params);
     }
 }

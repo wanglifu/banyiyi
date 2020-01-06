@@ -23,24 +23,38 @@
  *       ┗┻┛　┗┻┛
  * Created by PhpStorm.
  * User: wanglifu
- * Date: 2019/12/26
- * Time: 17:09
+ * Date: 2020/1/6
+ * Time: 15:31
  * Notes:
  */
-require_once './vendor/autoload.php';
-/*require_once 'banyiyi/src/Token/AccessTokenClient.php';
-$config = [
-    'app_id'=> '5e11840ad3cc29',
-    'app_secret'=> 'ssssssssssssssssssssssssssssssss',
-];
-$token = \Banyiyi\Client\AccessTokenClient::instance($config);
-var_dump($token->getToken());*/
 
-require_once 'banyiyi/src/Blockchain/BlockchainClient.php';
+namespace Banyiyi\Base;
 
-$config = [
-    'app_id'=> '5e11840ad3cc29',
-    'app_secret'=> 'ssssssssssssssssssssssssssssssss',
-];
-$Blockchain = \Banyiyi\Client\BlockchainClient::instance($config);
-$Blockchain->getKey();
+
+class Qequest
+{
+
+    /**
+     * @param string $url
+     * @param array $query
+     * @return string
+     * get提交
+     */
+    protected function httpGet(string $url, array $query = [])
+    {
+        return $this->request($url, 'GET', ['query' => $query]);
+    }
+
+    /**
+     * @param string $url
+     * @param array $data
+     * @param bool $verify
+     * @return string
+     * post提交
+     */
+    protected function httpPost(string $url, array $data = [], $verify = false)
+    {
+        return $this->request($url, 'POST', ['form_params' => $data, 'verify' => $verify]);
+    }
+
+}
