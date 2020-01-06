@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="735837ae-b3ac-42f8-8ec6-9b18b30393f0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banyiyi/src/BaseClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banyiyi/src/Blockchain/BlockchainClient.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banyiyi/src/Cache/CacheClient.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banyiyi/src/Copyright/CopyrightClient.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banyiyi/src/Qequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Qequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banyiyi/src/Sort/SortClient.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banyiyi/src/Token/AccessTokenClient.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.php" beforeDir="false" afterPath="$PROJECT_DIR$/demo.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1VVupjSb2bD90P3ZL8y2fizWYEb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WebApp\banyiyi\src" />
+      <recent name="D:\WebApp\banyiyi\src\Client" />
+      <recent name="D:\WebApp\banyiyi" />
+      <recent name="D:\WebApp\banyiyi\banyiyi\src\siam" />
+      <recent name="D:\WebApp\banyiyi\banyiyi\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WebApp\banyiyi" />
+      <recent name="D:\WebApp\banyiyi\vendor\symfony\cache\Simple" />
+      <recent name="D:\WebApp\banyiyi\banyiyi\src" />
+      <recent name="D:\WebApp\banyiyi\banyiyi\src\ServicePlatform\Kernel\Support" />
+      <recent name="D:\WebApp\banyiyi\banyiyi" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="735837ae-b3ac-42f8-8ec6-9b18b30393f0" name="Default Changelist" comment="" />
+      <created>1577350767981</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577350767981</updated>
+      <workItem from="1577350769189" duration="2320000" />
+      <workItem from="1577416086765" duration="9293000" />
+      <workItem from="1577673049431" duration="1566000" />
+      <workItem from="1577761424116" duration="3138000" />
+      <workItem from="1578195384160" duration="1719000" />
+      <workItem from="1578210718597" duration="2466000" />
+      <workItem from="1578213241794" duration="2942000" />
+      <workItem from="1578273975907" duration="603000" />
+      <workItem from="1578279141479" duration="17199000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
