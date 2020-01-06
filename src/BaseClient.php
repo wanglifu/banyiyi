@@ -82,6 +82,5 @@ class BaseClient extends Qequest
      */
     private function getSign()
     {
-
     }
 }
