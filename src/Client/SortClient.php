@@ -30,7 +30,7 @@
 
 namespace Banyiyi\Client;
 
-use Banyiyi\Base\BaseClient;
+use Banyiyi\BaseClient;
 
 class SortClient extends BaseClient
 {

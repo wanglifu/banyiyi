@@ -23,13 +23,14 @@
  *       ┗┻┛　┗┻┛
  * Created by PhpStorm.
  * User: wanglifu
- * Date: 2020/1/5
+ * Date: 2020/1/6
  * Time: 15:54
  * Notes:
  */
 
 namespace Banyiyi\Client;
 
+use Banyiyi\Cache\CacheClient;
 use GuzzleHttp\Client;
 use GuzzleHttp\Promise\AggregateException;
 
@@ -38,8 +39,9 @@ class AccessTokenClient extends CacheClient
 
     protected static $instance = null;
 
-
     protected $config = [];
+
+    private $prefix = 'http://open.banyiyi.com';
 
     /**
      * @var string
@@ -78,7 +80,7 @@ class AccessTokenClient extends CacheClient
             return $cache->get($cacheKey);
         }
 
-        return $this->httpPost('/api/common/getAppToken', $this->config);
+        return $this->httpPost($this->prefix.'/api/common/getAppToken', $this->config);
 
     }
 

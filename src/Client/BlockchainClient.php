@@ -23,14 +23,14 @@
  *       ┗┻┛　┗┻┛
  * Created by PhpStorm.
  * User: wanglifu
- * Date: 2020/1/5
+ * Date: 2020/1/6
  * Time: 15:54
  * Notes:
  */
 
 namespace Banyiyi\Client;
 
-use Banyiyi\Base\BaseClient;
+use Banyiyi\BaseClient;
 use Closure;
 
 class BlockchainClient extends BaseClient
@@ -38,7 +38,6 @@ class BlockchainClient extends BaseClient
 
     protected static $instance = null;
 
-    protected $config = [];
 
     private function __construct($options = [])
     {
@@ -60,10 +59,10 @@ class BlockchainClient extends BaseClient
      * @return string
      * 绑定用户
      */
-    public function getKey($userKey)
+    public function getKey($user_identify)
     {
         $params = [
-            'userKey' => $userKey,
+            'user_identify' => $user_identify,
         ];
         return $this->httpGet('/api/blockchain/bindUserBlockChain', $params);
     }
@@ -73,11 +72,17 @@ class BlockchainClient extends BaseClient
      * @return string
      * 文件上链
      */
-    public function cochain($userKey)
+    public function cochain($user_identify, $private_key, $works_name, $file_md5, $upload_user, $upload_user_id, $file_identify)
     {
         $params = [
-            'userKey' => $userKey,
+            'user_identify' => $private_key,
+            'private_key' => $user_identify,
+            'works_name' => $works_name,
+            'file_md5' => $file_md5,
+            'upload_user' => $upload_user,
+            'upload_user_id' => $upload_user_id,
+            'file_identify' => $file_identify,
         ];
-        return $this->httpPost('/api/blockchain/bindUserBlockChain', $params);
+        return $this->request('/api/blockchain/externalBlockChain', 'POST', $params);
     }
 }
