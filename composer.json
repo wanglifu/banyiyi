@@ -16,6 +16,10 @@
         "symfony/cache": "^3.3 || ^4.3"
     },
     "autoload": {
-        "Banyiyi\\":"src/"
+        "psr-4": {
+            "Banyiyi\\":"src/",
+            "Banyiyi\\Client\\":"src/Client",
+            "Banyiyi\\Cache\\":"src/Cache"
+        }
     }
 }

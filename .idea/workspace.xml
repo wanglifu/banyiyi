@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="735837ae-b3ac-42f8-8ec6-9b18b30393f0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/banyiyi/src/BaseClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseClient.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banyiyi/src/Blockchain/BlockchainClient.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/banyiyi/src/Cache/CacheClient.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/banyiyi/src/Copyright/CopyrightClient.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/banyiyi/src/Qequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Qequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banyiyi/src/Sort/SortClient.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/banyiyi/src/Token/AccessTokenClient.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.php" beforeDir="false" afterPath="$PROJECT_DIR$/demo.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +95,7 @@
       <workItem from="1578210718597" duration="2466000" />
       <workItem from="1578213241794" duration="2942000" />
       <workItem from="1578273975907" duration="603000" />
-      <workItem from="1578279141479" duration="17199000" />
+      <workItem from="1578279141479" duration="17523000" />
     </task>
     <servers />
   </component>

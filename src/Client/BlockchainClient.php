@@ -30,8 +30,6 @@
 
 namespace Banyiyi\Client;
 
-require_once 'banyiyi/src/BaseClient.php';
-
 use Banyiyi\Base\BaseClient;
 use Closure;
 

@@ -30,7 +30,6 @@
 
 namespace Banyiyi;
 
-require_once 'banyiyi/src/Token/AccessTokenClient.php';
 use Banyiyi\Client\AccessTokenClient;
 use Closure;
 use GuzzleHttp\Client;
