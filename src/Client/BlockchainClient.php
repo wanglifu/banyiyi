@@ -59,11 +59,8 @@ class BlockchainClient extends BaseClient
      * @return string
      * 绑定用户
      */
-    public function getKey($user_identify)
+    public function getKey($params)
     {
-        $params = [
-            'user_identify' => $user_identify,
-        ];
         return $this->httpGet('/api/blockchain/bindUserBlockChain', $params);
     }
 
@@ -72,17 +69,8 @@ class BlockchainClient extends BaseClient
      * @return string
      * 文件上链
      */
-    public function cochain($user_identify, $private_key, $works_name, $file_md5, $upload_user, $upload_user_id, $file_identify)
+    public function cochain($params)
     {
-        $params = [
-            'user_identify' => $private_key,
-            'private_key' => $user_identify,
-            'works_name' => $works_name,
-            'file_md5' => $file_md5,
-            'upload_user' => $upload_user,
-            'upload_user_id' => $upload_user_id,
-            'file_identify' => $file_identify,
-        ];
         return $this->request('/api/blockchain/externalBlockChain', 'POST', $params);
     }
 }

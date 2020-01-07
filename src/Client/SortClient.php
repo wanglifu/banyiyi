@@ -58,11 +58,8 @@ class SortClient extends BaseClient
      * @return string
      * 版权登记
      */
-    public function register($userKey)
+    public function register($params)
     {
-        $params = [
-            'userKey' => $userKey,
-        ];
-        return $this->httpPost('http://open.banyiyi.com/api/blockchain/bindUserBlockChain', $params);
+        return $this->httpPost('api/blockchain/bindUserBlockChain', $params);
     }
 }

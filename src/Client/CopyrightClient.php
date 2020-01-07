@@ -59,15 +59,8 @@ class CopyrightClient extends BaseClient
      * @return string
      * 版权登记
      */
-    public function register($userKey, $user_tx_hash, $works_name, $pseudonym, $file_md5)
+    public function register($params)
     {
-        $params = [
-            'userKey' => $userKey,
-            'user_tx_hash' => $user_tx_hash,
-            'works_name' => $works_name,
-            'pseudonym' => $pseudonym,
-            'file_md5' => $file_md5,
-        ];
         return $this->httpPost('/api/copyright/registerCopyright', $params);
     }
 }
