@@ -36,12 +36,30 @@ use GuzzleHttp\Promise\AggregateException;
 
 class AccessTokenClient extends CacheClient
 {
-
+    /**
+     * @var null
+     */
     protected static $instance = null;
 
+    /**
+     * @var array
+     */
     protected $config = [];
 
-    private $prefix = 'http://open.banyiyi.com';
+    /**
+     * @var string
+     */
+    protected $prefix = 'http://open.banyiyi.com';
+
+    /**
+     * @var string
+     */
+    protected $tokenKey = 'access_token';
+
+    /**
+     * @var int
+     */
+    protected $safeSeconds = 500;
 
     /**
      * @var string
