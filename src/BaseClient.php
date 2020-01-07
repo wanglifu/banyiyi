@@ -79,9 +79,24 @@ class BaseClient extends Qequest
 
     /**
      * 生成签名
+     * @param $datas
+     * @param $appSecret
+     * @return bool|string
      */
-    private function getSign()
+    private function getSign($datas, $appSecret)
     {
-
+        $str = ''; // 生成签名的原始字符串
+        if (empty($datas) || !is_array($datas)) {
+            return false;
+        }
+        if (empty($appSecret)){
+            return false;
+        }
+        // 参数
+        ksort($datas);
+        foreach ($datas as $k => $v) {
+            $str .= $k . '=' . $v . '&';
+        }
+        return md5($str . $appSecret);
     }
 }
