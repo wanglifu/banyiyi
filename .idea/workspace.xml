@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="735837ae-b3ac-42f8-8ec6-9b18b30393f0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/banyiyi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/banyiyi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +39,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../banyiyi_open_platform" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -95,6 +96,7 @@
       <workItem from="1578213241794" duration="2942000" />
       <workItem from="1578273975907" duration="603000" />
       <workItem from="1578279141479" duration="21013000" />
+      <workItem from="1578362634621" duration="43000" />
     </task>
     <servers />
   </component>
