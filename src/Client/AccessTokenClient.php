@@ -36,12 +36,30 @@ use GuzzleHttp\Promise\AggregateException;
 
 class AccessTokenClient extends CacheClient
 {
-
+    /**
+     * @var null
+     */
     protected static $instance = null;
 
+    /**
+     * @var array
+     */
     protected $config = [];
 
-    private $prefix = 'http://open.banyiyi.com';
+    /**
+     * @var string
+     */
+    protected $prefix = 'http://open.banyiyi.com';
+
+    /**
+     * @var string
+     */
+    protected $tokenKey = 'access_token';
+
+    /**
+     * @var int
+     */
+    protected $safeSeconds = 500;
 
     /**
      * @var string
@@ -80,11 +98,20 @@ class AccessTokenClient extends CacheClient
             return $cache->get($cacheKey);
         }
 
-        return $this->httpPost($this->prefix.'/api/common/getAppToken', $this->config);
+        $token = $this->httpPost($this->prefix . '/api/common/getAppToken', $this->config);
 
+        $this->setToken($token['data']['access_token'], 7200);
+        return $token;
     }
 
 
+    /**
+     * @param string $token
+     * @param int $lifetime
+     * @return $this
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * 设置token
+     */
     public function setToken(string $token, int $lifetime = 7200)
     {
         $this->getCache()->set($this->getCacheKey(), [
@@ -100,6 +127,7 @@ class AccessTokenClient extends CacheClient
     }
 
     /**
+     * @return $this
      * 重新获取
      */
     public function refreshToekn()
