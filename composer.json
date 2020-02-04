@@ -1,7 +1,7 @@
 {
-    "name": "wlf/banyiyi",
-    "description": "banyiyi Api",
-    "type": "project",
+    "name": "wlf/bandemo",
+    "description": "111",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -11,15 +11,20 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=7.0",
-        "guzzlehttp/guzzle": "~6.0",
-        "symfony/cache": "^3.3 || ^4.3"
+        "php": ">=7.0.0"
     },
     "autoload": {
         "psr-4": {
-            "Banyiyi\\":"src/",
-            "Banyiyi\\Client\\":"src/Client",
-            "Banyiyi\\Cache\\":"src/Cache"
+            "Ford\\Escape\\": "src/Ford/Escape",
+            "Ford\\Fusion\\": "src/Ford/Fusion",
+            "Ford\\Focus\\": "src/Ford/Focus",
+            "Ford\\Fiesta\\": "src/Ford/Fiesta"
         }
+    },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
     }
+  }
 }
